@@ -79,7 +79,7 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       {open && (
-        <div className="mt-4 bg-white dark:bg-slate-900 rounded-3xl shadow-xl p-6 md:hidden text-center space-y-4">
+        <div className="mt-4 text-white bg-white dark:bg-slate-900 rounded-3xl shadow-xl p-6 md:hidden text-center space-y-4">
           <Link to="/" onClick={() => setOpen(false)} className="block">
             Home
           </Link>

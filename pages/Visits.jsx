@@ -1,5 +1,21 @@
 import React from "react";
+import { motion } from "framer-motion";
+import {
+  ClockIcon,
+  MapPinIcon,
+  UsersIcon,
+} from "@heroicons/react/24/outline";
 import Navbar from "../components/Navbar";
+
+const fadeIn = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0 },
+};
 
 export default function Visit() {
   return (
@@ -8,38 +24,70 @@ export default function Visit() {
 
       <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-indigo-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 transition-colors pt-24 pb-16">
         <div className="max-w-6xl mx-auto px-6">
-          <h1 className="text-4xl font-extrabold text-slate-900 dark:text-slate-100 text-center">
-            Plan Your Visit
-          </h1>
 
-          <p className="mt-4 text-slate-600 dark:text-slate-300 text-center text-lg max-w-2xl mx-auto">
+          {/* Page Header */}
+          <motion.h1
+            className="text-4xl font-extrabold text-slate-900 dark:text-slate-100 text-center"
+            variants={fadeUp}
+            initial="hidden"
+            animate="visible"
+            transition={{duration:1.2, delay:0.2}}
+          >
+            Plan Your Visit
+          </motion.h1>
+
+          <motion.p
+            className="mt-4 text-slate-600 dark:text-slate-300 text-center text-lg max-w-2xl mx-auto"
+            variants={fadeIn}
+            initial="hidden"
+            animate="visible"
+            transition={{duration:1.2, delay:0.2}}
+          >
             Everything you need to know before joining us for a service.
-          </p>
+          </motion.p>
 
           {/* Service Times & Location */}
-          <div className="mt-12 grid md:grid-cols-2 gap-10">
+          <motion.div
+            className="mt-12 grid md:grid-cols-2 gap-10"
+            variants={fadeIn}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+
             {/* Service Times */}
-            <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-indigo-700 dark:text-amber-400">
+            <motion.div
+              className="bg-white dark:bg-slate-900 rounded-2xl shadow-lg p-8"
+              variants={fadeUp}
+            >
+              <h2 className="text-2xl font-bold text-indigo-700 dark:text-amber-400 flex items-center gap-2">
+                <ClockIcon className="w-6 h-6" />
                 Service Times
               </h2>
+
               <ul className="mt-4 text-slate-600 dark:text-slate-300 space-y-3">
                 <li>• Sunday Worship – 8:00 AM Prompt</li>
                 <li>
                   • Midweek Service – Tuesday and yhursday (Digging deep and
                   Gist night) 8:00 PM - 9:00 PM
                 </li>
+
                 <button className="mt-4 inline-block bg-amber-500 hover:bg-amber-600 transition text-indigo-900 font-semibold px-5 py-2 rounded-xl shadow-md">
                   <a href="">Join the online Whatsapp group</a>
                 </button>
               </ul>
-            </div>
+            </motion.div>
 
             {/* Location */}
-            <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-lg p-8">
-              <h2 className="text-2xl font-bold text-indigo-700 dark:text-amber-400">
+            <motion.div
+              className="bg-white dark:bg-slate-900 rounded-2xl shadow-lg p-8"
+              variants={fadeUp}
+            >
+              <h2 className="text-2xl font-bold text-indigo-700 dark:text-amber-400 flex items-center gap-2">
+                <MapPinIcon className="w-6 h-6" />
                 Location
               </h2>
+
               <p className="mt-4 text-slate-600 dark:text-slate-300">
                 123 Church Avenue, Lagos, Nigeria
               </p>
@@ -55,19 +103,28 @@ export default function Visit() {
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           {/* What to Expect */}
-          <div className="mt-16 bg-indigo-900 rounded-3xl p-10 text-center">
-            <h2 className="text-2xl font-bold text-white">
+          <motion.div
+            className="mt-16 bg-indigo-900 rounded-3xl p-10 text-center"
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <h2 className="text-2xl font-bold text-white flex justify-center items-center gap-2">
+              <UsersIcon className="w-6 h-6 text-amber-400" />
               What to Expect
             </h2>
+
             <p className="mt-4 text-indigo-200 max-w-3xl mx-auto text-lg">
               Friendly people, powerful worship, and a welcoming environment for
               you.
             </p>
-          </div>
+          </motion.div>
+
         </div>
       </div>
     </div>
