@@ -89,11 +89,12 @@ export default function Events() {
           </motion.h1>
 
           <motion.div
-            className="grid md:grid-cols-2 gap-8 mt-12"
+            className="grid md:grid-cols-3 gap-8 mt-12"
             variants={fadeIn}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
+            transition={{duration:1.2, delay:0.2}}
           >
             {events.map((e, i) => (
               <motion.div

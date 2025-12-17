@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className="mt-16 text-gray-700 dark:text-white border border-black ">
+    <footer className="mt-16 text-gray-700 dark:text-white border-t border-black ">
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div className="flex flex-col space-y-4">
           <Link to="/" className="flex items-center space-x-3">
-            <img src="/redeem2.png" alt="Redeem Church logo" className="w-10 h-10 rounded-full" />
-            <span className="text-xl font-bold">Overcomers Assembly</span>
+            <img src="/logo.jpg" alt="Redeem Church logo" className="w-10 h-10 rounded-full" />
+            <span className="text-xl font-bold">Overcomers Assembly Teens Church</span>
           </Link>
           <p className="text-sm">Building community through worship, service and discipleship. Join us Sundays at 10:00 AM.</p>
           <p>Give us a follow on our social media handles</p>
@@ -32,7 +32,7 @@ const Footer = () => {
         <div>
           <h4 className="font-semibold mb-3">Connect</h4>
           <ul className="space-y-2 text-sm">
-            <li><a href="mailto:info@redeemchurch.org" className="hover:text-indigo-600">info@redeemchurch.org</a></li>
+            <li><a href="mailto:info@redeemchurch.org" className="hover:text-indigo-600">oatc@gmail.com</a></li>
             <li><a href="tel:+1234567890" className="hover:text-indigo-600">+1 (234) 567-890</a></li>
             <li className="text-sm">123 Church St, City, State</li>
           </ul>
@@ -48,10 +48,6 @@ const Footer = () => {
       <div className="border-t border-gray-200 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center text-sm">
           <span>© {new Date().getFullYear()} Redeem Church. All rights reserved.</span>
-          <div className="space-x-4 mt-3 md:mt-0">
-            <Link to="/privacy" className="hover:underline">Privacy</Link>
-            <Link to="/terms" className="hover:underline">Terms</Link>
-          </div>
         </div>
       </div>
     </footer>

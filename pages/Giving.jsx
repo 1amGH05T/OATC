@@ -62,6 +62,7 @@ export default function Giving() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
+            transition={{duration:1.2, delay:0.2}}
           >
             <motion.div
               className="flex justify-between border-b border-indigo-700 pb-2"
@@ -84,14 +85,15 @@ export default function Giving() {
               variants={fadeUp}
             >
               <span className="font-semibold">Account Number</span>
-              <span>{textToCopy}</span>
-              <button onClick={handleCopy} className="p-1">
+              <span className="flex items-center">{textToCopy}
+                <button onClick={handleCopy} className="p-1">
                 {copied ? (
                   <CheckBadgeIcon className="w-5 h-5 text-green-500" />
                 ) : (
                   <DocumentDuplicateIcon className="w-5 h-5" />
                 )}
               </button>
+              </span>
             </motion.div>
 
             <motion.div

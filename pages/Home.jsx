@@ -251,6 +251,7 @@ export default function Home() {
       >
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h3 className="text-3xl font-bold">Tribes</h3>
+          <p className="text-gray-400">Join a tribe so you can acitvely participate in church activities</p>
 
           <div className="grid md:grid-cols-4 gap-8 mt-12">
             {[

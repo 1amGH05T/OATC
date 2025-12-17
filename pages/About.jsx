@@ -44,7 +44,7 @@ export default function About() {
             </h1>
             <p className="mt-6 text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
               Overcomers Assembly Teens Church (OATC) is a vibrant and welcoming
-              community committed to helping young people grow in faith, love, and
+              community committed to helping teenagers grow in faith, love, and
               purpose. We believe every teen has the potential to make a difference
               in the world through Christ.
             </p>
@@ -57,6 +57,7 @@ export default function About() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false }}
+            transition={{duration:1.2, delay:0.2}}
           >
             <motion.div variants={fadeUp}>
               <h2 className="text-3xl font-bold text-indigo-700 dark:text-amber-400 mb-4 flex items-center gap-2">
@@ -90,6 +91,7 @@ export default function About() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false }}
+            transition={{duration:1.2, delay:0.2}}
           >
             <h2 className="text-3xl font-bold mb-4 text-amber-400 flex items-center gap-2">
               <ClockIcon className="w-7 h-7" />
@@ -99,7 +101,7 @@ export default function About() {
               Established in 2010, Overcomers Assembly Teens Church started as a small
               group of passionate young believers committed to serving God and their
               community. Over the years, the church has grown into a dynamic ministry
-              that hosts weekly services, youth programs, community outreach initiatives,
+              that hosts weekly services, teens programs, community outreach initiatives,
               and life-transforming events. We are proud of the impact we've made in the
               lives of countless teens and families across Lagos and beyond.
             </p>
@@ -112,6 +114,7 @@ export default function About() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false }}
+            transition={{duration:1.2, delay:0.2}}
           >
             {[
               {
@@ -120,7 +123,7 @@ export default function About() {
                 icon: MusicalNoteIcon,
               },
               {
-                title: "Youth Programs",
+                title: "Teenagers Programs",
                 description: "Engaging programs for teens that build character, leadership, and community.",
                 icon: UsersIcon,
               },
@@ -152,6 +155,7 @@ export default function About() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: false }}
+            transition={{duration:1.2, delay:0.2}}
           >
             <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-lg p-8">
               <h2 className="text-2xl font-bold text-indigo-700 dark:text-amber-400 flex items-center gap-2">
@@ -159,11 +163,12 @@ export default function About() {
                 Service Times
               </h2>
               <ul className="mt-4 text-slate-600 dark:text-slate-300 space-y-3">
-                <li>Sunday Worship – 9:00 AM & 11:00 AM</li>
+                <li>Sunday Worship – 8:00 AM Prompt</li>
                 <li className="font-semibold">
                   Midweek Services
                   <br />
-                  Digging Deep: Tuesday 6:00 – 8:00 PM
+                  Digging Deep: Tuesday 8:00 PM - 9:00 PM<br />
+                  Gist Night: Thursday 8:00 PM - 9:00 PM
                 </li>
               </ul>
             </div>

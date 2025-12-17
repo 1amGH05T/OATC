@@ -11,7 +11,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2">
           <img
-            src="/redeem2.png"
+            src="/logo.jpg"
             alt="logo"
             className="w-10 h-10 rounded-full"
           />
@@ -79,7 +79,7 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       {open && (
-        <div className="mt-4 text-white bg-white dark:bg-slate-900 rounded-3xl shadow-xl p-6 md:hidden text-center space-y-4">
+        <div className="mt-4 bg-white dark:text-white dark:bg-slate-900 rounded-3xl shadow-xl p-6 md:hidden text-center space-y-4">
           <Link to="/" onClick={() => setOpen(false)} className="block">
             Home
           </Link>

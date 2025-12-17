@@ -99,7 +99,6 @@ export default function Visit() {
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
-                  loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
@@ -113,6 +112,7 @@ export default function Visit() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
+            transition={{duration:1.2, delay:0.2}}
           >
             <h2 className="text-2xl font-bold text-white flex justify-center items-center gap-2">
               <UsersIcon className="w-6 h-6 text-amber-400" />

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
+import emailjs from '@emailjs/browser';
 import {
   PhoneIcon,
   EnvelopeIcon,
@@ -19,6 +20,26 @@ const fadeUp = {
 };
 
 export default function Contact() {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_bsz54ia',
+      'template_8fepohe',
+      form.current,
+      'OgsmA3xajlGXc1F_S'
+    )
+    .then(() => {
+      alert('Message sent!');
+      form.current.reset();
+    })
+    .catch((error) => {
+      console.error(error);
+      alert('Failed to send message')
+    });
+  };
+
   return (
     <div>
       <Navbar />
@@ -32,6 +53,7 @@ export default function Contact() {
             variants={fadeUp}
             initial="hidden"
             animate="visible"
+            transition={{duration:1.2, delay:0.2}}
           >
             <h1 className="text-4xl font-extrabold text-slate-900 dark:text-slate-100">
               Contact Us
@@ -48,6 +70,7 @@ export default function Contact() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
+            transition={{duration:1.2, delay:0.2}}
           >
             {/* Contact info */}
             <motion.div
@@ -75,17 +98,21 @@ export default function Contact() {
             </motion.div>
 
             {/* Form */}
-            <motion.form
+            <motion.form ref={form} onSubmit={sendEmail}
               className="bg-white dark:bg-slate-900 shadow-lg rounded-2xl p-8"
               variants={fadeUp}
             >
               <input
                 type="text"
+                name="from_name"
+                required
                 placeholder="Your Name"
                 className="w-full border border-slate-300 dark:border-slate-700 bg-transparent p-3 rounded-lg mb-4 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               />
               <input
                 type="email"
+                name="reply_to"
+                required
                 placeholder="Your Email"
                 className="w-full border border-slate-300 dark:border-slate-700 bg-transparent p-3 rounded-lg mb-4 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               />
@@ -94,7 +121,9 @@ export default function Contact() {
                 className="w-full border border-slate-300 dark:border-slate-700 bg-transparent p-3 rounded-lg mb-4 h-32 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               ></textarea>
 
-              <button className="bg-amber-500 hover:bg-amber-600 transition text-indigo-900 font-semibold px-6 py-3 rounded-xl w-full shadow-md flex items-center justify-center gap-2">
+              <button
+              type="submit"
+              className="bg-amber-500 hover:bg-amber-600 transition text-indigo-900 font-semibold px-6 py-3 rounded-xl w-full shadow-md flex items-center justify-center gap-2">
                 Send Message
                 <PaperAirplaneIcon className="w-5 h-5" />
               </button>
