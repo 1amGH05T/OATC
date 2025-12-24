@@ -74,7 +74,10 @@ export default function Visit() {
                 </li>
 
                 <button className="mt-4 inline-block bg-amber-500 hover:bg-amber-600 transition text-indigo-900 font-semibold px-5 py-2 rounded-xl shadow-md">
-                  <a href="">Join the online Whatsapp group</a>
+                  <a href="https://chat.whatsapp.com/ConDBvXlBCX7ZM8x0v5VCb"
+                  target="_blank"
+                  aria-label="whatsapp"
+                  rel="noopener noreferrer">Join the online Whatsapp group</a>
                 </button>
               </ul>
             </motion.div>

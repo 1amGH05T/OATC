@@ -83,17 +83,27 @@ export default function Contact() {
 
               <p className="flex items-center gap-2 text-slate-600 dark:text-slate-300">
                 <PhoneIcon className="w-5 h-5 text-indigo-600 dark:text-amber-400" />
-                Phone: +234 808 123 4567
+                Phone: +234 814 956 6126
               </p>
 
               <p className="flex items-center gap-2 text-slate-600 dark:text-slate-300">
                 <EnvelopeIcon className="w-5 h-5 text-indigo-600 dark:text-amber-400" />
-                Email: info@oatc.org
+                Email: ladejebijoshua@gmail.com
               </p>
 
               <p className="flex items-center gap-2 text-slate-600 dark:text-slate-300">
-                <MapPinIcon className="w-5 h-5 text-indigo-600 dark:text-amber-400" />
-                Address: 123 Church Avenue, Lagos
+                <MapPinIcon className="w-6 h-6 text-indigo-600 dark:text-amber-400" />
+                Address: 1a, Redemtion Close Off Unity Estate, Egeda Idimu.
+              </p>
+              
+              <p className="flex items-center gap-2 text-slate-600 dark:text-slate-300">
+                Follow us on Instagram
+                <a href="https://www.instagram.com/oatc_rccg?igsh=b25jODBldDFsa3hj" 
+                target='_blank' 
+                rel='noopener noreferrer' 
+                aria-label="Instagram" 
+                className="hover:text-indigo-600">
+                  <img src="/instagram.png" alt="" className='h-8 w-8 rounded-full bg-red-300'/></a>
               </p>
             </motion.div>
 
