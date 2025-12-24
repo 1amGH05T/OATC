@@ -88,7 +88,7 @@ export default function Contact() {
 
               <p className="flex items-center gap-2 text-slate-600 dark:text-slate-300">
                 <EnvelopeIcon className="w-5 h-5 text-indigo-600 dark:text-amber-400" />
-                Email: info@churchname.org
+                Email: info@oatc.org
               </p>
 
               <p className="flex items-center gap-2 text-slate-600 dark:text-slate-300">
@@ -106,7 +106,7 @@ export default function Contact() {
                 type="text"
                 name="from_name"
                 required
-                placeholder="Your Name"
+                placeholder="John Doe"
                 className="w-full border border-slate-300 dark:border-slate-700 bg-transparent p-3 rounded-lg mb-4 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               />
               <input
@@ -118,6 +118,8 @@ export default function Contact() {
               />
               <textarea
                 placeholder="Message"
+                name="message"
+                type="message"
                 className="w-full border border-slate-300 dark:border-slate-700 bg-transparent p-3 rounded-lg mb-4 h-32 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               ></textarea>
 

@@ -11,11 +11,26 @@ const Footer = () => {
             <span className="text-xl font-bold">Overcomers Assembly Teens Church</span>
           </Link>
           <p className="text-sm">Building community through worship, service and discipleship. Join us Sundays at 10:00 AM.</p>
-          <p>Give us a follow on our social media handles</p>
+          <p>Give us a follow on our social media handle</p>
           <div className="flex space-x-3 text-sm">
-            <a href="#" aria-label="Facebook" className="hover:text-indigo-600">Facebook</a>
-            <a href="#" aria-label="Instagram" className="hover:text-indigo-600">Instagram</a>
-            <a href="#" aria-label="YouTube" className="hover:text-indigo-600">YouTube</a>
+            <a href="https://www.instagram.com/oatc_rccg?igsh=b25jODBldDFsa3hj" 
+            target='_blank' 
+            rel='noopener noreferrer' 
+            aria-label="Instagram" 
+            className="hover:text-indigo-600">
+            <img src="/instagram.png" alt="" className='h-8 w-8 rounded-full bg-red-300'/></a>
+            <a href="https://www.instagram.com/oatc_rccg?igsh=b25jODBldDFsa3hj" 
+            target='_blank' 
+            rel='noopener noreferrer' 
+            aria-label="Instagram" 
+            className="hover:text-indigo-600">
+            <img src="/instagram.png" alt="" className='h-8 w-8 rounded-full bg-red-300'/></a>
+            <a href="https://www.instagram.com/oatc_rccg?igsh=b25jODBldDFsa3hj" 
+            target='_blank' 
+            rel='noopener noreferrer' 
+            aria-label="Instagram" 
+            className="hover:text-indigo-600">
+            <img src="/instagram.png" alt="" className='h-8 w-8 rounded-full bg-red-300'/></a>
           </div>
         </div>
 
@@ -34,7 +49,7 @@ const Footer = () => {
           <ul className="space-y-2 text-sm">
             <li><a href="mailto:info@redeemchurch.org" className="hover:text-indigo-600">oatc@gmail.com</a></li>
             <li><a href="tel:+1234567890" className="hover:text-indigo-600">+1 (234) 567-890</a></li>
-            <li className="text-sm">123 Church St, City, State</li>
+            <li className="text-sm">1A, REDEMTION CLOSE OFF UNITY ESTATE, EGBEDA IDIMU.</li>
           </ul>
         </div>
 

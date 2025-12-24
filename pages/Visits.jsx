@@ -53,6 +53,7 @@ export default function Visit() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
+            transition={{duration:1.2, delay:0.2}}
           >
 
             {/* Service Times */}
@@ -68,7 +69,7 @@ export default function Visit() {
               <ul className="mt-4 text-slate-600 dark:text-slate-300 space-y-3">
                 <li>• Sunday Worship – 8:00 AM Prompt</li>
                 <li>
-                  • Midweek Service – Tuesday and yhursday (Digging deep and
+                  • Midweek Service – Tuesday and Thursday (Digging deep and
                   Gist night) 8:00 PM - 9:00 PM
                 </li>
 
@@ -89,7 +90,7 @@ export default function Visit() {
               </h2>
 
               <p className="mt-4 text-slate-600 dark:text-slate-300">
-                123 Church Avenue, Lagos, Nigeria
+                1A, REDEMTION CLOSE OFF UNITY ESTATE, EGBEDA IDIMU.
               </p>
 
               <div className="mt-6 w-full h-64 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700">
@@ -102,6 +103,15 @@ export default function Visit() {
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
+              <motion.div
+              className="mt-4 text-slate-600 dark:text-slate-300 text-lg max-w-2xl mx-auto"
+              >
+                <p>Head on to <span className="text-amber-500 font-bold">JUBILEE HOUSE.</span></p>
+                <ul>
+                  <li>First floor: 13 - 15years old</li>
+                  <li>Second floor: 16 - 16years old</li>
+                </ul>
+              </motion.div>
             </motion.div>
           </motion.div>
 
