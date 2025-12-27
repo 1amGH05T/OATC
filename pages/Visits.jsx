@@ -93,7 +93,7 @@ export default function Visit() {
               </h2>
 
               <p className="mt-4 text-slate-600 dark:text-slate-300">
-                1A, REDEMTION CLOSE OFF UNITY ESTATE, EGBEDA IDIMU.
+                1a, Redemtion Close Off Unity Estate, Egbeda Idimu.
               </p>
 
               <div className="mt-6 w-full h-64 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-700">
@@ -112,7 +112,7 @@ export default function Visit() {
                 <p>Head on to <span className="text-amber-500 font-bold">JUBILEE HOUSE.</span></p>
                 <ul>
                   <li>First floor: 13 - 15years old</li>
-                  <li>Second floor: 16 - 16years old</li>
+                  <li>Second floor: 16 - 19years old</li>
                 </ul>
               </motion.div>
             </motion.div>

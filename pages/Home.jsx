@@ -255,7 +255,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-4 gap-8 mt-12">
             {[
-              { name: "Ruby", img: "/ruby.jpg" },
+              { name: "Ruby", img: "/ruby.jpg"},
               { name: "Emerald", img: "/emrald.jpg" },
               { name: "Diamond", img: "/diamond.jpg" },
               { name: "Sapphire", img: "/sapphire.jpg" },
@@ -276,7 +276,8 @@ export default function Home() {
                 <h3 className="text-xl font-bold text-amber-400">
                   {tribe.name} Tribe
                 </h3>
-                <button className="bg-amber-500 hover:bg-amber-600 transition text-indigo-900 px-5 py-2 rounded-lg font-semibold">
+                <button 
+                className="bg-amber-500 hover:bg-amber-600 transition text-indigo-900 px-5 py-2 rounded-lg font-semibold">
                   Join
                 </button>
               </motion.div>

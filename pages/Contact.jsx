@@ -93,17 +93,15 @@ export default function Contact() {
 
               <p className="flex items-center gap-2 text-slate-600 dark:text-slate-300">
                 <MapPinIcon className="w-6 h-6 text-indigo-600 dark:text-amber-400" />
-                Address: 1a, Redemtion Close Off Unity Estate, Egeda Idimu.
+                Address: 1a, Redemtion Close Off Unity Estate, Egbeda Idimu.
               </p>
               
               <p className="flex items-center gap-2 text-slate-600 dark:text-slate-300">
-                Follow us on Instagram
                 <a href="https://www.instagram.com/oatc_rccg?igsh=b25jODBldDFsa3hj" 
                 target='_blank' 
                 rel='noopener noreferrer' 
                 aria-label="Instagram" 
-                className="hover:text-indigo-600">
-                  <img src="/instagram.png" alt="" className='h-8 w-8 rounded-full bg-red-300'/></a>
+                className="hover:text-indigo-600 underline">Follow us on Instagram</a>
               </p>
             </motion.div>
 
