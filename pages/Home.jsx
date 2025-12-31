@@ -28,7 +28,6 @@ export default function Home() {
 
   const events = [
     { title: "Thanksgiving Sunday", date: "Jan 4, 2026", time: "8:00 AM", description: "A joyful service dedicated to giving thanks to God for His blessings. Join us for uplifting worship, heartfelt prayers, and inspiring testimonies as we celebrate gratitude together as a church family."},
-    { title: "General Workers Retreat", date: "Jan 10, 2026", time: "4:00 PM", description:  "A rejuvenating retreat for all church workers to refresh their spirits and renew their commitment to service. This retreat will feature motivational speakers, team-building activities, and spiritual workshops designed to equip and inspire our dedicated volunteers."},
     { title: "Career Talk", date: "Jan 11, 2026", time: "8:00 AM", description: "An informative session aimed at Teenagers in their career choices. Industry professionals will share insights, tips, and personal experiences to help attendees make informed decisions about their future career paths."},
     { title: "Prayer Sunday", date: "Jan 25, 2026", time: "8:00 AM", description: "A special service focused on the power of prayer. Join us for a time of collective intercession, worship, and reflection as we seek God's guidance and blessings for our lives, community, and the world."},
   ];
