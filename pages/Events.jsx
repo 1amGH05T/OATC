@@ -58,16 +58,16 @@ export default function Events() {
   const [openModal1, setOpenModal1] = useState(null);
 
 const events = [
-  { title: "Thanksgiving Sunday", date: "Jan 4, 2026", time: "8:00 aM", description: "" },
-  { title: "Career Talk", date: "Jan 11, 2026", time: "8:00 AM", description: "An informative session aimed at Teenagers in their career choices. Industry professionals will share insights, tips, and personal experiences to help attendees make informed decisions about their future career paths."},
+  { title: "Thanksgiving Sunday", date: "Jan 4, 2026", time: "8:00 AM", description: "A New Year service of gratitude featuring testimonies, special worship, and a message celebrating God's provision and faithfulness." },
+  { title: "Career Talk", date: "Jan 11, 2026", time: "8:00 AM", description: "An informative session aimed at teenagers and young adults exploring career choices. Industry professionals will share insights, tips, and personal experiences to help attendees make informed decisions about their future career paths."},
   { title: "Prayer Sunday", date: "Jan 25, 2026", time: "8:00 AM", description: "A special service focused on the power of prayer. Join us for a time of collective intercession, worship, and reflection as we seek God's guidance and blessings for our lives, community, and the world."},
-  { title: "Thanksgiving Sunday", date: "Feb 1, 2026", time: "8:00 AM", description: "" },
-  { title: "Lily Among Thorns", date: "Feb 8, 2026", time: "8:00 AM", description: "" },
-  { title: "Movie Sunday", date: "Feb 15, 2026", time: "8:00 AM", description: "" },
-  { title: "Thanksgiving Sunday", date: "Mar 1, 2026", time: "8:00 AM", description: "" },
-  { title: "Gender Sunday", date: "Mar 8, 2026", time: "8:00 AM", description: "" },
-  { title: "Worship Sunday", date: "Mar 22, 2026", time: "8:00 AM", description: "" },
-  { title: "Ruby Sunday", date: "Mar 29, 2026", time: "8:00 AM", description: "" },
+  { title: "Thanksgiving Sunday", date: "Feb 1, 2026", time: "8:00 AM", description: "A mid-season thanksgiving service with communal praise, gratitude testimonies, and a short message on giving thanks in all seasons." },
+  { title: "Lily Among Thorns", date: "Feb 8, 2026", time: "8:00 AM", description: "A reflective service themed 'Lily Among Thorns' focusing on hope and resilience through worship, scripture, and a devotional message." },
+  { title: "Movie Sunday", date: "Feb 15, 2026", time: "8:00 AM", description: "A family-friendly film screening followed by a brief discussion and fellowship—popcorn and refreshments provided." },
+  { title: "Thanksgiving Sunday", date: "Mar 1, 2026", time: "8:00 AM", description: "A celebration of blessings with music, prayers of gratitude, and shared testimonies from the congregation." },
+  { title: "Gender Sunday", date: "Mar 8, 2026", time: "8:00 AM", description: "A thoughtful service exploring topics of gender, identity, and inclusion through scripture-based teaching and compassionate dialogue." },
+  { title: "Worship Sunday", date: "Mar 22, 2026", time: "8:00 AM", description: "An extended worship experience featuring guest musicians, praise sets, and focused times of prayer and reflection." },
+  { title: "Ruby Sunday", date: "Mar 29, 2026", time: "8:00 AM", description: "A celebratory service marking a special church milestone with music, testimonies, and post-service refreshments for fellowship." },
 ];
 
 
