@@ -18,19 +18,7 @@ const Footer = () => {
             rel='noopener noreferrer' 
             aria-label="Instagram" 
             className="hover:text-indigo-600">
-            <img src="/instagram.png" alt="" className='h-8 w-8 rounded-full bg-red-300'/></a>
-            <a href="https://www.instagram.com/oatc_rccg?igsh=b25jODBldDFsa3hj" 
-            target='_blank' 
-            rel='noopener noreferrer' 
-            aria-label="Instagram" 
-            className="hover:text-indigo-600">
-            <img src="/instagram.png" alt="" className='h-8 w-8 rounded-full bg-red-300'/></a>
-            <a href="https://www.instagram.com/oatc_rccg?igsh=b25jODBldDFsa3hj" 
-            target='_blank' 
-            rel='noopener noreferrer' 
-            aria-label="Instagram" 
-            className="hover:text-indigo-600">
-            <img src="/instagram.png" alt="" className='h-8 w-8 rounded-full bg-red-300'/></a>
+              <p className='underline'>Instagram</p></a>
           </div>
         </div>
 
@@ -48,7 +36,7 @@ const Footer = () => {
           <h4 className="font-semibold mb-3">Connect</h4>
           <ul className="space-y-2 text-sm">
             <li><a href="mailto:info@redeemchurch.org" className="hover:text-indigo-600">oatc@gmail.com</a></li>
-            <li><a href="tel:+1234567890" className="hover:text-indigo-600">+1 (234) 567-890</a></li>
+            <li><a href="tel:+1234567890" className="hover:text-indigo-600">08149566126</a></li>
             <li className="text-sm">1A, REDEMTION CLOSE OFF UNITY ESTATE, EGBEDA IDIMU.</li>
           </ul>
         </div>
