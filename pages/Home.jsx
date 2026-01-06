@@ -261,7 +261,7 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8 mt-12">
             {[
               { name: "Ruby", img: "/ruby.jpg", link: "https://chat.whatsapp.com/I0IScq52OIz3dNHB2Qazlc" },
-              { name: "Emerald", img: "/emrald.jpg", link: "https://chat.whatsapp.com/PLACEHOLDER_EMERALD" },
+              { name: "Emerald", img: "/emrald.jpg", link: "https://chat.whatsapp.com/F9bKoTeiRqgIeQSLZGgast" },
               { name: "Diamond", img: "/diamond.jpg", link: "https://chat.whatsapp.com/FqkFQGbBXht4gaeqJrY5YI" },
               { name: "Sapphire", img: "/sapphire.jpg", link: "https://chat.whatsapp.com/PLACEHOLDER_SAPPHIRE" },
             ].map((tribe) => (
