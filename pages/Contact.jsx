@@ -83,7 +83,7 @@ export default function Contact() {
 
               <p className="flex items-center gap-2 text-slate-600 dark:text-slate-300">
                 <PhoneIcon className="w-5 h-5 text-indigo-600 dark:text-amber-400" />
-                Phone: +234 814 956 6126
+                Phone: +234 808 024 8886
               </p>
 
               <p className="flex items-center gap-2 text-slate-600 dark:text-slate-300">

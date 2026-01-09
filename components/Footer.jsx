@@ -36,7 +36,7 @@ const Footer = () => {
           <h4 className="font-semibold mb-3">Connect</h4>
           <ul className="space-y-2 text-sm">
             <li><a href="mailto:info@redeemchurch.org" className="hover:text-indigo-600">oatc@gmail.com</a></li>
-            <li><a href="tel:+1234567890" className="hover:text-indigo-600">08149566126</a></li>
+            <li><a href="tel:+1234567890" className="hover:text-indigo-600">08080248886</a></li>
             <li className="text-sm">1A, REDEMTION CLOSE OFF UNITY ESTATE, EGBEDA IDIMU.</li>
           </ul>
         </div>
