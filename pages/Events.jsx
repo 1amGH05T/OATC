@@ -1,5 +1,5 @@
 import React from "react";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import {
@@ -20,40 +20,40 @@ const fadeUp = {
   visible: { opacity: 1, y: 0 },
 };
 
-const YOUR_SERVICE_ID = "service_bsz54ia";
-const YOUR_TEMPLATE_ID = "template_ov6vrot";
-const YOUR_PUBLIC_KEY = "OgsmA3xajlGXc1F_S";
+// const YOUR_SERVICE_ID = "service_bsz54ia";
+// const YOUR_TEMPLATE_ID = "template_ov6vrot";
+// const YOUR_PUBLIC_KEY = "OgsmA3xajlGXc1F_S";
 
 export default function Events() {
 
-  const handleRegister = (eventTitle) => {
-    const fullName = prompt(
-      `Enter your full name to register for ${eventTitle}:`
-    );
+//   const handleRegister = (eventTitle) => {
+//     const fullName = prompt(
+//       `Enter your full name to register for ${eventTitle}:`
+//     );
 
-    if (!fullName || fullName.trim() === "") return;
+//     if (!fullName || fullName.trim() === "") return;
 
-    const templateParams = {
-    user_name: fullName,
-    event_name: eventTitle,
-}
+//     const templateParams = {
+//     user_name: fullName,
+//     event_name: eventTitle,
+// }
 
-    emailjs
-      .send(
-        YOUR_SERVICE_ID,
-        YOUR_TEMPLATE_ID,
-        templateParams,
-        YOUR_PUBLIC_KEY
-      )
-      .then(() => {
-        alert(
-          `Thank you, ${fullName}. You've successfully registered for ${eventTitle}.`
-        );
-      })
-      .catch((error) => {
-        console.error("EmailJS Error:", error);
-      });
-  };
+//     emailjs
+//       .send(
+//         YOUR_SERVICE_ID,
+//         YOUR_TEMPLATE_ID,
+//         templateParams,
+//         YOUR_PUBLIC_KEY
+//       )
+//       .then(() => {
+//         alert(
+//           `Thank you, ${fullName}. You've successfully registered for ${eventTitle}.`
+//         );
+//       })
+//       .catch((error) => {
+//         console.error("EmailJS Error:", error);
+//       });
+//   };
 
   const [openModal1, setOpenModal1] = useState(null);
 
@@ -116,13 +116,13 @@ const events = [
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-stretch">
-                <button
+                {/* <button
                   onClick={() => handleRegister(e.title)}
                   className="mt-6 w-full md:w-auto bg-indigo-600 hover:bg-indigo-700 transition text-white px-5 py-2 rounded-xl font-semibold shadow-md flex items-center justify-center gap-2"
                 >
                   Register
                   <TicketIcon className="w-5 h-5" />
-                </button>
+                </button> */}
 
                 <button
                   onClick={() => setOpenModal1(i)}
