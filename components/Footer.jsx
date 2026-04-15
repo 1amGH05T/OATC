@@ -10,7 +10,7 @@ const Footer = () => {
             <img src="/logo.jpg" alt="Redeem Church logo" className="w-10 h-10 rounded-full" />
             <span className="text-xl font-bold">Overcomers Assembly Teens Church</span>
           </Link>
-          <p className="text-sm">Building community through worship, service and discipleship. Join us Sundays at 8:00 AM.</p>
+          <p className="text-sm">Building community through worship, service and discipleship. Join us on Sundays at 8:00 AM.</p>
           <p>Give us a follow on our social media handle</p>
           <div className="flex space-x-3 text-sm">
             <a href="https://www.instagram.com/oatc_rccg?igsh=b25jODBldDFsa3hj" 
